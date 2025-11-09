@@ -9,7 +9,7 @@ const WeatherDisplay = ({weather}) => {
         <div className="flex flex-col ">
        <div className='flex ml-0  mt-2'>
           <img
-          className="w-16 h-9 "
+          className="w-16 h-7 "
           src={weather.current.condition.icon}
           alt={weather.current.condition.text}
         />
