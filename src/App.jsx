@@ -19,7 +19,7 @@ const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
 
     try {
       const response = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=yes`
+        `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=yes`
       );
 
       if (!response.ok) {
