@@ -8,6 +8,7 @@ const SearchBar = ({ location, setLocation, getWeather }) => {
         placeholder="Enter city"
         value={location}
         onChange={(e) => setLocation(e.target.value)}
+        onKeyPress={(e) => e.key === 'Enter' && getWeather()}
         className="w-full px-4 py-2 border rounded mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
       />
        <button
